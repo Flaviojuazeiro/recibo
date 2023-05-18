@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="radio" name="pagamento" value="Pix" id="radioPix"> Pix
+
+<script>
+  // Supondo que você tenha uma variável chamada 'valorPagamento' com o valor que deseja comparar
+
+  // Obtém a referência para o radio button
+  var radioPix = document.getElementById('radioPix');
+
+  // Verifica se o radio button está selecionado e se o seu valor é igual à variável 'valorPagamento'
+  if (radioPix.checked && radioPix.value === valorPagamento) {
+    console.log('A variável está igual ao valor do radio button (Pix)');
+    return true;
+  } else {
+    console.log('A variável não está igual ao valor do radio button (Pix)');
+    return false;
+  }
+
+
+
+  ///    check duplicar div 
+  
+
+
+  <input type="checkbox" id="checkboxDuplicar"> Marcar para duplicar
+<div id="divOriginal">
+  Conteúdo original da div
+</div>
+<div id="divDuplicada">
+  <!-- A div duplicada será inserida aqui -->
+</div>
+
+<script>
+  var checkboxDuplicar = document.getElementById('checkboxDuplicar');
+  var divOriginal = document.getElementById('divOriginal');
+  var divDuplicada = document.getElementById('divDuplicada');
+
+  checkboxDuplicar.addEventListener('change', function() {
+    if (checkboxDuplicar.checked) {
+      // Duplicar a div
+      var divClone = divOriginal.cloneNode(true);
+      divDuplicada.appendChild(divClone);
+    } else {
+      // Remover a div duplicada se estiver presente
+      while (divDuplicada.firstChild) {
+        divDuplicada.removeChild(divDuplicada.firstChild);
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>
