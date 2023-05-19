@@ -1,4 +1,13 @@
 
+  // Verificar se o LocalStorage está em branco
+  var valorLocalStorage = localStorage.getItem('meusDados');
+  if (valorLocalStorage === null) {
+    // Redirecionar para a nova URL
+    window.location.href = '../index.html';
+  };
+
+
+
 // valor  por  extenso em reais  
 
 
@@ -154,6 +163,8 @@ btnVoltar.addEventListener("click", function() {
   // Chamar a função para duplicar a div
   duplicarDiv();
   
+
+
  
 
 

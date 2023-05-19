@@ -154,6 +154,7 @@ width: 70%;
         padding: 5px;
         font-size: 15px; 
          outline: none; /* remove a borda ao clicar */
+         border-color: #969797;
                
       }
 
@@ -181,11 +182,17 @@ input[type=number]::-webkit-outer-spin-button {
         vertical-align: middle;
         font-size: 14px;
         font-weight: 400;
+       
 
       }
 
       #chek{
         margin-right: 10px;
+       
+      }
+
+      #chec{
+        margin-right: 5px;
       }
 
       button{
